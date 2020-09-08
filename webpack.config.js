@@ -10,14 +10,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: "ts-loader",
       },
     ],
   },
   resolve: {
-    extensions: [".js"],
+    extensions: [".js", ".ts", ".tsx"],
   },
   plugins: [
     new HtmlWebpackPlugin({
