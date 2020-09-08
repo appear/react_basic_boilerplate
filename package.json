@@ -4,6 +4,8 @@
   "description": "1. Markup with Styled Components 2. with Mobx React Lite",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier .",
+    "lint": "eslint .",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
@@ -49,5 +51,15 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "npm run lint"
+    ]
   }
 }
