@@ -1,7 +1,7 @@
 {
-  "name": "todomvc",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "1. Markup with Styled Components 2. with Mobx React Lite",
+  "description": "react basic boilerplate",
   "main": "index.js",
   "scripts": {
     "prettier": "prettier .",
