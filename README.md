@@ -1,4 +1,8 @@
-# TODO MVC Example
+# React Basic Boilerplate
 
-1. Markup with Styled Components
-2. with Mobx React Lite
+- webpack 
+- typescript
+- react
+- eslint
+- prettier 
+- husky, commit hooks
